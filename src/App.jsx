@@ -99,11 +99,7 @@ export const App = () => {
         {(sortField || reverse) && (
           <button
             type="button"
-            className={
-              sortField === SORT_FIELD_RESET
-                ? 'button is-danger'
-                : 'button is-danger is-light'
-            }
+            className="button is-danger is-light"
             onClick={() => {
               setReverse(false);
               setSortField(SORT_FIELD_RESET);
